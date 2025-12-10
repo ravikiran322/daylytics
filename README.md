@@ -142,6 +142,8 @@ MIT License - feel free to use this project for personal or commercial purposes.
 - **Shareable** - Perfect for showcasing your development skills
 
 ---
+follow up live---- **https://daylytics.netlify.app/**
 
 Made with ❤️ for a better life
+
 
