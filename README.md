@@ -53,9 +53,6 @@ npm run build
 
 The built files will be in the `dist` directory.
 
-### Deployment
-
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions on deploying to GitHub Pages.
 
 ## 🎨 Customization
 
@@ -132,6 +129,7 @@ Feel free to fork this project and make it your own! Some ideas:
 - Mobile app version
 
 ## 📄 License
+@"Ravikiran C"
 
 MIT License - feel free to use this project for personal or commercial purposes.
 
@@ -146,3 +144,4 @@ MIT License - feel free to use this project for personal or commercial purposes.
 ---
 
 Made with ❤️ for a better life
+
