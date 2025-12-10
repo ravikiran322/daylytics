@@ -1,0 +1,164 @@
+.water-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 24px;
+  min-height: 200px;
+}
+
+.water-glass-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.water-glass {
+  width: 80px;
+  height: 200px;
+  border: 3px solid #14b8a6;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(20, 184, 166, 0.1);
+}
+
+.water-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 0 17px 17px;
+  animation: waterRise 0.8s ease-out;
+}
+
+.water-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: wave 2s infinite;
+}
+
+.water-stats {
+  flex: 1;
+  text-align: center;
+}
+
+.water-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.water-current {
+  color: #14b8a6;
+}
+
+.water-separator {
+  color: var(--text-secondary);
+  margin: 0 8px;
+}
+
+.water-goal {
+  color: var(--text-secondary);
+}
+
+.water-units {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.water-percentage {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #14b8a6;
+}
+
+.water-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.water-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #14b8a6;
+  background: rgba(20, 184, 166, 0.1);
+  color: #14b8a6;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.water-btn:hover:not(:disabled) {
+  background: #14b8a6;
+  color: white;
+  transform: scale(1.1);
+}
+
+.water-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.water-indicator-dots {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.water-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #14b8a6;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.water-dot.filled {
+  background: #14b8a6;
+  box-shadow: 0 0 8px rgba(20, 184, 166, 0.6);
+  transform: scale(1.2);
+}
+
+@keyframes waterRise {
+  from {
+    height: 0;
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    transform: translateY(-5px) scaleX(1.1);
+  }
+}
+
+.insight {
+  padding: 16px;
+  background: rgba(20, 184, 166, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #14b8a6;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

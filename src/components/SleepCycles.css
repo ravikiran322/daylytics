@@ -1,0 +1,32 @@
+.sleep-summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.sleep-item {
+  flex: 1;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.sleep-hours {
+  color: var(--accent-secondary);
+}
+
+.sleep-quality {
+  color: #10b981;
+}
+
+.insight {
+  padding: 16px;
+  background: rgba(139, 92, 246, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-secondary);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

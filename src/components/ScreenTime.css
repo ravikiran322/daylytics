@@ -1,0 +1,83 @@
+.screen-total {
+  background: rgba(236, 72, 153, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #ec4899;
+  border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.screen-chart {
+  margin-bottom: 24px;
+}
+
+.screen-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.screen-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.screen-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+}
+
+.screen-item-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.screen-item-name {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.screen-item-bar-container {
+  flex: 1;
+  height: 8px;
+  background: rgba(236, 72, 153, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.screen-item-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease-out;
+  animation: progressAnimation 1.5s ease-out;
+}
+
+.screen-item-hours {
+  min-width: 40px;
+  text-align: right;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@keyframes progressAnimation {
+  from {
+    width: 0;
+  }
+}
+
+.insight {
+  padding: 16px;
+  background: rgba(236, 72, 153, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #ec4899;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

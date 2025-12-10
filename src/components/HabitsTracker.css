@@ -1,0 +1,111 @@
+.completion-badge {
+  background: linear-gradient(135deg, #10b981, #059669);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.habits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.habit-item {
+  background: rgba(16, 185, 129, 0.05);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.habit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.habit-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.habit-icon {
+  font-size: 1.5rem;
+}
+
+.habit-name {
+  display: block;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.habit-streak {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--accent-warning);
+  font-weight: 500;
+}
+
+.habit-progress-text {
+  font-weight: 700;
+  color: var(--accent-success);
+  font-size: 1.1rem;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  position: relative;
+  transition: width 1s ease-out;
+  animation: progressAnimation 1.5s ease-out;
+}
+
+.progress-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes progressAnimation {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.insight {
+  padding: 16px;
+  background: rgba(16, 185, 129, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-success);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
